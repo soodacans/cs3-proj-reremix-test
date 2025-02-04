@@ -29,3 +29,4 @@ function chooseDessert(dessert) {
     window.location.href = 'icecream.html'; 
   }
 }
+
