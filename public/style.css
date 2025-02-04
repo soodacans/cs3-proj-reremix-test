@@ -84,5 +84,37 @@ figcaption {
     font-style: bold;
 }
 
+#base-image {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.options {
+    display: none;
+    margin-top: 10px;
+}
+
+.decorate-button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #ff8b94;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+.decorate-button:hover {
+    background-color: #ff5a68;
+    }
+
+.decorate-button:active {
+    background-color: #e24452;
+    }
 
 
