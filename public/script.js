@@ -51,3 +51,34 @@ function selectFlavor(flavor) {
     window.location.href = 'caketoppings.html';
   }
 }
+
+//COMMENT
+function selectCont(cont) {
+  if (cont === 'cup') {
+    window.location.href = 'icecreamflavor.html';
+  } else if (cont === 'cone') {
+    window.location.href = 'icecreamflavor.html';
+  }
+}
+
+//COMMENT
+function selectICFlavor(flavor) {
+  if (flavor === 'strawberry') {
+    window.location.href = 'icecreamtopping.html';
+  } else if (flavor === 'vanilla') {
+    window.location.href = 'icecreamtopping.html';
+  } else if (flavor === 'chocolate') {
+    window.location.href = 'icecreamtopping.html';
+  }
+}
+
+//COMMENT
+function selectICTopping(topping) {
+  if (topping === 'cherry') {
+    window.location.href = 'finish.html';
+  } else if (topping === 'sprinkles') {
+    window.location.href = 'finish.html';
+  } else if (topping === 'marshmallow') {
+    window.location.href = 'finish.html';
+  }
+}
