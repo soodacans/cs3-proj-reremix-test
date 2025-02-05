@@ -17,6 +17,16 @@ header {
 header img {
     width: 100px;
     position: static;
+  
+}
+
+#logo {
+  width: 145px;
+  height: 145px;
+  position: relative;
+  left: 10px;
+  top: px;
+
 }
 
 .navbar {
