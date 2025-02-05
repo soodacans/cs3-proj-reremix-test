@@ -30,3 +30,24 @@ function chooseDessert(dessert) {
   }
 }
 
+//After the user chooses a shape, they will be directed to the next webpage to pick a flavor
+function selectShape(shape) {
+  if (shape === 'square') {
+    window.location.href = 'cakeflavor.html';
+  } else if (shape === 'heart') {
+    window.location.href = 'cakeflavor.html';
+  } else if (shape === 'circle') {
+    window.location.href = 'cakeflavor.html';
+  }
+}
+
+//After the user chooses a flavor, they will be directed to the next webpage to pick a topping
+function selectFlavor(flavor) {
+  if (flavor === 'vanilla') {
+    window.location.href = 'caketoppings.html';
+  } else if (flavor === 'strawberry') {
+    window.location.href = 'caketoppings.html';
+  } else if (flavor === 'chocolate') {
+    window.location.href = 'caketoppings.html';
+  }
+}

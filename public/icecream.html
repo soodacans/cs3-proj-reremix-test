@@ -7,12 +7,12 @@
   <meta name="author" content="Erin Luz and Sofia Triguero">
   <meta name="description" content="A simple game where the user makes cake and icecream for their customers! This is the homepage.">
   <meta name="keywords" content="game, cafe, food, decorate, dessert, cake, icecream, cute">
-  <title>CoT: Icecream!</title>
+  <title>CoT: Cake!</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="https://cdn.glitch.global/5c7f8dc4-a8ab-446f-94bb-7ca841fad583/logo.png?v=1734880906284">
 </head>
   
-<body> <!-- Header code-->
+<body>
     <header>
         <img align="left" src="https://cdn.glitch.global/5c7f8dc4-a8ab-446f-94bb-7ca841fad583/logo.png?v=1734880906284" alt="Logo">
         <nav class="navbar">
@@ -53,17 +53,22 @@
         </nav>
     </header>
   
-   <main> <!-- Work in progress notice-->
-      <h1 id="redH1">WAIT!!! </h1>
-      <h2>
-        This part of the game is still a work in progress. We will complete this soon! (in the next milestone)
-          </h2>
-    <h2>
-        This will be the part of the game where you will decorate icecream.
-        Press the Star (Home) to go back!
-    </h2>
+    <main> <!-- This code will allow the user to select the container of the icecream -->
+    <h1>What container would your icecream have?</h1>
+      <div class="container-selection">
+          <button onclick="selectCont('cup')">
+              <img src="https://cdn.glitch.global/5f707871-d38e-4705-95cc-e371ac56015d/LUZ%2C%20TRIGUERO%20CS3%20Q2%20Proj%20Proposal%20Wireframe%20(4).png?v=1738695350799" alt="Cup">
+          </button>
+          <button onclick="selectCont('cone')">
+              <img src="https://cdn.glitch.global/5f707871-d38e-4705-95cc-e371ac56015d/LUZ%2C%20TRIGUERO%20CS3%20Q2%20Proj%20Proposal%20Wireframe%20(5).png?v=1738695472927" alt="Cone">
+          </button>
+      </div>
+      
+      
 
-  </main>
+      </main>
+
+<script defer src="script.js"></script>
+</body>
   
-  </body>
 </html>
