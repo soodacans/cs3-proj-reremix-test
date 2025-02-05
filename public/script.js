@@ -30,7 +30,9 @@ function chooseDessert(dessert) {
   }
 }
 
-//After the user chooses a shape, they will be directed to the next webpage to pick a flavor
+//CAKE
+
+//If the user chooses cake, they will choose a shape, then they will be directed to the next webpage to pick a flavor
 function selectShape(shape) {
   if (shape === 'square') {
     window.location.href = 'cakeflavor.html';
@@ -52,7 +54,21 @@ function selectFlavor(flavor) {
   }
 }
 
-//COMMENT
+
+//After the user picks a topping, they will be directed to the finish page where their final decorated sweet treat will be displayed
+function selectTopping(topping) {
+  if (topping === 'strawberry') {
+    window.location.href = 'finish.html';
+  } else if (topping === 'sprinkles') {
+    window.location.href = 'finish.html';
+  } else if (topping === 'cherry') {
+    window.location.href = 'finish.html';
+  }
+}
+
+//ICE CREAM
+
+//If the user chooses icecream, they will choose a container, then they will be directed to the next webpage to pick a flavor
 function selectCont(cont) {
   if (cont === 'cup') {
     window.location.href = 'icecreamflavor.html';
@@ -61,7 +77,7 @@ function selectCont(cont) {
   }
 }
 
-//COMMENT
+//After the user chooses a flavor, they will be directed to the next webpage to pick a topping
 function selectICFlavor(flavor) {
   if (flavor === 'strawberry') {
     window.location.href = 'icecreamtopping.html';
@@ -72,7 +88,7 @@ function selectICFlavor(flavor) {
   }
 }
 
-//COMMENT
+//After the user picks a topping, they will be directed to the finish page where their final decorated sweet treat will be displayed
 function selectICTopping(topping) {
   if (topping === 'cherry') {
     window.location.href = 'finish.html';
