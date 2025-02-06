@@ -23,13 +23,15 @@ function selectApron(apron) {
 // Depending on which the user chose, they will be brought to the corresponding webpage
 function chooseDessert(dessert) {
   if (dessert === 'cake') {
+    localStorage.setItem('cake', dessert)
     window.location.href = 'cake.html';  
   } else if (dessert === 'icecream') {
+    localStorage.setItem('icecream', dessert)
     window.location.href = 'icecream.html'; 
   }
 }
 
-// CAKE
+// CAKE DISPLAY CODE
 
 // If the user chooses cake, they will choose a shape, then they will be directed to the next webpage to pick a flavor
 function selectShape(shape) {
@@ -39,13 +41,13 @@ function selectShape(shape) {
 
 // After the user chooses a flavor, they will be directed to the next webpage to pick a topping
 function selectFlavor(cakeflavor) {
-  localStorage.setItem('flavor', cakeflavor)
+  localStorage.setItem('cakeflavor', cakeflavor)
   window.location.href = 'caketoppings.html';
 }
 
 // After the user picks a topping, they will be directed to the finish page where their final decorated sweet treat will be displayed
 function selectTopping(caketopping) {
-  localStorage.setItem('topping', caketopping)
+  localStorage.setItem('caketopping', caketopping)
   window.location.href = 'finish.html';
 }
 
@@ -69,24 +71,7 @@ function selectICTopping(topping) {
   window.location.href = 'finish.html';
 }
 
-window.onload = function () {
-  let cont = localStorage.getItem("container");
-  let shape = localStorage.getItem("shape");
-  let cakeflavor = localStorage.getItem("cakeflavor");
-  let flavor = localStorage.getItem("flavor");
-  let caketopping = localStorage.getItem("topping");
-  let topping = localStorage.getItem("topping");
-  
-  if (cont && flavor && topping) {
-    displayFinalIcecream(cont, flavor, topping);
-  } else if (shape && cakeflavor && caketopping) {
-    displayFinalCake(shape, cakeflavor, caketopping);
-  } else {
-    document.getElementById("final-image").src = "https://via.placeholder.com/300x300.png";
-  }
-};
-
-
+//ICECREAM
 // Will use user input from the choices to determine the final ICECREAM img to be displayed 
 function displayFinalIcecream(cont, flavor, topping) {
   if (cont === 'cup' && flavor === 'strawberry' && topping === 'cherry') {
@@ -131,9 +116,7 @@ function displayFinalIcecream(cont, flavor, topping) {
   
 }
 
-
-
-
+//CAKE
 // Will use user input from the choices to determine the final CAKE img to be displayed 
 function displayFinalCake(shape, cakeflavor, caketopping) {
   if (shape === 'circle' && cakeflavor === 'strawberry' && caketopping === 'strawberry') {
@@ -197,3 +180,25 @@ function displayFinalCake(shape, cakeflavor, caketopping) {
   }
 
 }
+
+  function whichDessert(dessert) {
+    if (dessert === 'cake') {
+      let shape = localStorage.getItem("shape");
+      let cakeflavor = localStorage.getItem("cakeflavor");
+      let caketopping = localStorage.getItem("caketopping");
+       if (shape && cakeflavor && caketopping) {
+    displayFinalCake(shape, cakeflavor, caketopping);
+  } else {
+    document.getElementById("final-image").src = "https://via.placeholder.com/300x300.png";
+  }
+    } else if (dessert === 'icecream') {
+      let cont = localStorage.getItem("container");
+      let flavor = localStorage.getItem("flavor");
+      let topping = localStorage.getItem("topping");
+        if (cont && flavor && topping) {
+    displayFinalIcecream(cont, flavor, topping);
+  } else {
+    document.getElementById("final-image").src = "https://via.placeholder.com/300x300.png";
+  }
+    }
+  }
