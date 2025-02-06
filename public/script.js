@@ -1,11 +1,9 @@
 // When the user chooses to exit, this will close the window
-
-
 function exitGame() {
   // Close the window if allowed by the browser
   // This only works in the code preview. It does not work in the live site due to browser restriction
   if (window.confirm("Are you sure you want to leave?")) {
-    let newwindow = window.open(cs3-proj-cesium-luz-triguero.glitch.me
+    window.close();
   } else {
     console.log("Leave canceled.");
   }
@@ -82,7 +80,7 @@ window.onload = function() {
   if (cont && flavor && topping) {
     displayFinalIcecream(cont, flavor, topping);
   } else {
-    document.getElementById("final-image").src = "https://via.placeholder.com/300x300.png";  // Default image
+    document.getElementById("final-image").src = "https://cdn.glitch.global/5c7f8dc4-a8ab-446f-94bb-7ca841fad583/logo.png?v=1734880906284";  // Default image
   }
 };
 
@@ -142,7 +140,7 @@ window.onload = function() {
   if (shape && flavor && topping) {
     displayFinalCake(shape, flavor, topping);
   } else {
-    document.getElementById("final-image").src = "https://via.placeholder.com/300x300.png";  // Default image
+    document.getElementById("final-image").src = "https://cdn.glitch.global/5c7f8dc4-a8ab-446f-94bb-7ca841fad583/logo.png?v=1734880906284";  // Default image
   }
 };
 
