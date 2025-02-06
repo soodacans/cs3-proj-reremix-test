@@ -1,9 +1,11 @@
 // When the user chooses to exit, this will close the window
+
+
 function exitGame() {
   // Close the window if allowed by the browser
   // This only works in the code preview. It does not work in the live site due to browser restriction
   if (window.confirm("Are you sure you want to leave?")) {
-    setTm
+    let newwindow = window.open(cs3-proj-cesium-luz-triguero.glitch.me
   } else {
     console.log("Leave canceled.");
   }
