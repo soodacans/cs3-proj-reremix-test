@@ -3,7 +3,7 @@ function exitGame() {
   // Close the window if allowed by the browser
   // This only works in the code preview. It does not work in the live site due to browser restriction
   if (window.confirm("Are you sure you want to leave?")) {
-    self.close();
+    setTm
   } else {
     console.log("Leave canceled.");
   }
